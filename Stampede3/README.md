@@ -26,3 +26,6 @@ Also, as a quick fix to [this issue](https://github.com/DedalusProject/dedalus/p
 things being deprecated in scipy 1.14, I changed `scipy` to `scipy=1.13.1` in the relevant conda install lines. 
 Additionally, following [this post](https://groups.google.com/g/dedalus-users/c/HVKP6K5C5n4/m/CZBoA960AgAJ), I 
 similarly found the need to change `mpi4py` to `"mpi4py<4.0"` in the install script.
+
+Note that I found it necessary to create a dedalus config file in `~/.dedalus/dedalus.cfg` and set
+`FILEHANDLER_TOUCH_TMPFILE = True`
